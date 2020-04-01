@@ -15,7 +15,19 @@ Page({
       url: '../logs/logs'
     })
   },
+  onReady:function(){
+    console.log('onReady')
+
+  },
+
+  onShow: function(){
+    console.log('onShow')
+
+  },
+
   onLoad: function () {
+
+    console.log('onLoad')
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
